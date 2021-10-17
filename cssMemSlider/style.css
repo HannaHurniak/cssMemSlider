@@ -5,15 +5,15 @@ html {
 .slider { 
 	margin: 0 auto;
     position: relative;
-    max-width: 960px;
+    max-width: 1100px;
 	text-align: center;
 }
 .mem {
 	width: 20%;
-	float: right;
+	float: left;
 }
 .image {
-	width: 700%;
+	width: 600%;
 	line-height: 0;
 }
 .slides-container {
@@ -21,5 +21,52 @@ html {
 	overflow: hidden;
 }
 img {
-	width: 100%;
+	width: 40vw;
+}
+label {
+	cursor: pointer;
+}
+input {
+	display: none;
+}
+#switch1:checked ~ .slides .image{
+	margin-left: 0;
+}
+#switch2:checked ~ .slides .image {
+	margin-left: -120%;
+}
+#switch3:checked ~ .slides .image {
+	margin-left: -240%;
+}
+#switch4:checked ~ .slides .image {
+	margin-left: -360%;
+}
+#switch5:checked ~ .slides .image {
+	margin-left: -480%;
+}
+.buttons label {
+	border-radius: 10px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: #bbb;
+}
+.buttons {
+	margin: 0 0;
+	text-align: center;
+}
+.buttons label:hover {
+	background: #b293b4;
+	border-color: #350638;
+}
+#switch1:checked ~ .buttons label:nth-child(1),
+#switch2:checked ~ .buttons label:nth-child(2),
+#switch3:checked ~ .buttons label:nth-child(3),
+#switch4:checked ~ .buttons label:nth-child(4),
+#switch5:checked ~ .buttons label:nth-child(5) {
+	background: #e251ec;
+	border-color: #e251ec;
+}
+.slides .image { 
+	transition: all 1s linear;
 }
