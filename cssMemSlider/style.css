@@ -1,0 +1,25 @@
+html {
+    margin: 0 auto;
+    padding: 0;
+}
+.slider { 
+	margin: 0 auto;
+    position: relative;
+    max-width: 960px;
+	text-align: center;
+}
+.mem {
+	width: 20%;
+	float: right;
+}
+.image {
+	width: 700%;
+	line-height: 0;
+}
+.slides-container {
+	width: 100%;
+	overflow: hidden;
+}
+img {
+	width: 100%;
+}
