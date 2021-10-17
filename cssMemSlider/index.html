@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,40 +12,49 @@
     <main>
         <section>
             <h1></h1>
-            <div>
-                <input checked type="radio" name="main" id="desktop">
-                <div class="slider">
-
-                    <input checked type="radio" name="" id="switch1">
-                    <input type="radio" name="slider" id="switch2">
-                    <input type="radio" name="slider" id="switch3">
-                    <input type="radio" name="slider" id="switch4">
-                    <input type="radio" name="slider" id="switch5">
-
-                    <div class="slides">
-                        <div>
-                            <img src="./assets/1.jpg" alt="">
+            <div class="wrapper">
+                <input checked type="radio" name="respond" id="desktop">
+                    <div class="slider">
+                            <input checked type="radio" name="slider" id="switch1">
+                            <input type="radio" name="slider" id="switch2">
+                            <input type="radio" name="slider" id="switch3">
+                            <input type="radio" name="slider" id="switch4">
+                            <input type="radio" name="slider" id="switch5">
+                        <div class="slides">
+                            <div id="slides-container">
+                                <div class="image">
+                                    <div>
+                                        <img src="./assets/1.jpg" alt="1">
+                                        <p>Агент 7:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/2.jpg" alt="2">
+                                        <p>Hello world!</p>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/3.jpg" alt="3">
+                                        <p>Коооод</p>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/4.jpg" alt="4">
+                                        <p>JavaScript</p>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/5.jpg" alt="5">
+                                        <p>FullStack</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="./assets/2.jpg" alt="">
-                        </div><div>
-                            <img src="./assets/3.jpg" alt="">
-                        </div><div>
-                            <img src="./assets/4.jpg" alt="">
-                        </div><div>
-                            <img src="./assets/5.jpg" alt="">
+                        <div class="buttons">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                            <label for="switch5"></label>
                         </div>
                     </div>
-
-                    <div class="controls">
-                        <label for="switch1"></label>
-                        <label for="switch2"></label>
-                        <label for="switch3"></label>
-                        <label for="switch4"></label>
-                        <label for="switch5"></label>
-                    </div>
-                </div>
-            </div>
+	            </div>
         </section>
     </main>
     
